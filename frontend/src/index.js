@@ -82,10 +82,9 @@ root.render(
   <React.StrictMode>
     <HelmetProvider>
       <Provider store={store}>
-        {/* <PayPalScriptProvider deferLoading={false}>
-        <RouterProvider router={router} />
-      </PayPalScriptProvider> */}
-        <RouterProvider router={router} />
+        <PayPalScriptProvider deferLoading={false}>
+          <RouterProvider router={router} />
+        </PayPalScriptProvider>
       </Provider>
     </HelmetProvider>
   </React.StrictMode>
